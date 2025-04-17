@@ -1,59 +1,503 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      rel="icon"
+      href="/src/img/logo-girafa-vaticana.png"
+      type="image/png"
+    />
+
     <title>Girafa Vaticana</title>
-</head>
+  </head>
 
-<body style="background-color: #f4ecdd;">
+  <body style="background-color: #f4ecdd">
+    <header class="d-flex align-items-center justify-content-between">
+      <img style="height: 190px" src="/src/img/girafa-vaticana.png" alt="" />
 
-  <header class="d-flex align-items-center justify-content-between">
+      <nav>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" style="color: #071d36" href="/index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              style="background-color: #48356a; color: #fff"
+              aria-current="page"
+              href="/src/templates/sobre.html"
+              >Sobre a Lenda</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              style="color: #071d36"
+              href="/src/templates/blog.html"
+              >Blog</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              style="color: #071d36"
+              href="/src/templates/biblioteca.html"
+              >Biblioteca Cósmica</a
+            >
+          </li>
+        </ul>
+      </nav>
 
-  <img style="height: 190px;" src="./src/img/girafa-vaticana.png" alt="">
+      <div class="dropdown p-3">
+        <a
+          class="btn btn-secondary dropdown-toggle"
+          style="background-color: #48356a; color: #fff"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Contato
+        </a>
 
-  <nav>
-    <ul class="nav nav-pills">
-      <li class="nav-item">
-        <a class="nav-link" style="color: #071d36;"
-          href="./index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" style="background-color: #48356a; color: #f4ecdd;" aria-current="page" href="./src/templates/sobre.html">Sobre a Lenda</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" style="color: #071d36;" href="./src/templates/blog.html">Blog</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" style="color: #071d36;" href="./src/templates/biblioteca.html">Biblioteca Cósmica</a>
-      </li>
-    </ul>
-  </nav>
+        <ul class="dropdown-menu">
+          <li class="d-flex">
+            <img src="" alt="" /><a
+              class="dropdown-item"
+              href="https://github.com/M00NH0RS3"
+              >GitHub</a
+            >
+          </li>
+          <li class="d-flex">
+            <img src="" alt="" /><a class="dropdown-item" href="#"
+              >Another action</a
+            >
+          </li>
+          <li class="d-flex">
+            <img src="" alt="" /><a class="dropdown-item" href="#"
+              >Something else here</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
 
-  <div class="dropdown p-3">
-    <a class="btn btn-secondary dropdown-toggle" style="background-color: #48356a; color: #f4ecdd;" href="#"
-      role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      Dropdown link
-    </a>
+    <main class="m-5">
+      <div class="d-flex flex-column align-items-center">
+        <h1>A Lenda da Girafa Vaticana</h1>
+        <p
+          class="text-center"
+          style="color: #6c757d; font-size: large; font-weight: 400"
+        >
+          Uma fábula cósmica embalada em mistério, sabedoria e pescoços
+          estendidos rumo ao desconhecido.
+        </p>
+      </div>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseOne"
+              style="
+                background-color: #e8d6b6;
+                font-size: large;
+                font-weight: 500;
+              "
+            >
+              1. A Noite Silenciosa
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseOne"
+            class="accordion-collapse collapse"
+          >
+            <div
+              class="accordion-body d-flex flex-column"
+              style="background-color: #faf7f0"
+            >
+              <h4>O início da lenda</h4>
+              <p>
+                Em uma madrugada atípica de céu limpo sobre os jardins internos
+                do Vaticano, um fenômeno inexplicável se manifesta. Testemunhas
+                — entre cardeais, monges e guardas — relataram uma silhueta
+                colossal, inconfundivelmente a de uma girafa, iluminada por um
+                brilho dourado sutil.
+              </p>
+              <p>Ela não se moveu. Não emitiu sons.</p>
+              <p>
+                Mas no silêncio absoluto, todos presentes sentiram uma presença
+                poderosa e um mesmo pensamento interno:
+              </p>
+              <p style="color: #6c757d; font-weight: 500">
+                | <cite>"Olhem além."</cite>
+              </p>
+              <p>Os sinos de Roma pararam. Nenhum vento soprava.</p>
+              <p>
+                Assim começou o mistério da <strong>Girafa Vaticana</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
 
-    <ul class="dropdown-menu">
-      <li class="d-flex"><img src="" alt=""><a class="dropdown-item" href="https://github.com/M00NH0RS3">GitHub</a></li>
-      <li class="d-flex"><img src="" alt=""><a class="dropdown-item" href="#">Another action</a></li>
-      <li class="d-flex"><img src="" alt=""><a class="dropdown-item" href="#">Something else here</a></li>
-    </ul>
-  </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo"
+              style="
+                background-color: #e8d6b6;
+                font-size: large;
+                font-weight: 500;
+              "
+            >
+              2. O Codex Giraffa – O Diário Perdido de Gregório XVII
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwo"
+            class="accordion-collapse collapse"
+          >
+            <div
+              class="accordion-body d-flex flex-column"
+              style="background-color: #faf7f0"
+            >
+              <h4>A revelação oculta</h4>
+              <p>
+                Três anos após a aparição, o enigmático papa
+                <strong>Gregório XVII</strong>, não reconhecido oficialmente
+                pela Igreja, começou a registrar visões noturnas com a criatura.
+                Ele chamava-a de
+                <cite>Guardia Celeste do Pescoço Dourado</cite>. Suas anotações
+                foram codificadas em um diário secreto que ficou conhecido como
+                o <strong>Codex Giraffa</strong>.
+              </p>
+              <p>
+                O diário narra encontros místicos, viagens astrais conduzidas
+                pela girafa e revelações sobre o tempo, a consciência e a missão
+                humana. Muitos acreditam que o Codex é dividido em três partes:
+              </p>
+              <ul>
+                <li>
+                  <strong>O Pescoço da Alma:</strong> sobre espiritualidade e
+                  transcendência
+                </li>
+                <li>
+                  <strong>As Estrelas nos Cascos:</strong> ensinamentos sobre o
+                  tempo e a matéria
+                </li>
+                <li>
+                  <strong>A Última Gota:</strong> profecias sobre o retorno da
+                  entidade
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-</header>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree"
+              style="
+                background-color: #e8d6b6;
+                font-size: large;
+                font-weight: 500;
+              "
+            >
+              3. A Ordem dos Observadores Longínquos
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseThree"
+            class="accordion-collapse collapse"
+          >
+            <div
+              class="accordion-body d-flex flex-column"
+              style="background-color: #faf7f0"
+            >
+              <h4>A fundação secreta da sabedoria girafal</h4>
+              <p>
+                Inspirados pelos escritos do Codex, um grupo de místicos,
+                cientistas visionários e artistas sensíveis fundou,
+                secretamente, a
+                <strong>Ordem dos Observadores Longínquos</strong>.
+              </p>
+              <p>Seu lema:</p>
+              <p style="color: #6c757d; font-weight: 500">
+                | <cite>“Ver de longe para compreender de perto.”</cite>
+              </p>
+              <p>
+                Essa ordem acredita que a Girafa Vaticana é um símbolo de
+                consciência expandida — seu pescoço representa a busca por
+                perspectiva, altura espiritual e visão além do óbvio.
+              </p>
+              <p>
+                Eles preservam trechos do Codex, criam interpretações modernas,
+                constroem meditações baseadas em seus ensinamentos e se preparam
+                para um novo ciclo cósmico.
+              </p>
+            </div>
+          </div>
+        </div>
 
-<footer class="d-flex flex-column align-items-center justify-content-center mb-2">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFour"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFour"
+              style="
+                background-color: #e8d6b6;
+                font-size: large;
+                font-weight: 500;
+              "
+            >
+              4. O Sussurro dos Céus
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseFour"
+            class="accordion-collapse collapse"
+          >
+            <div
+              class="accordion-body d-flex flex-column"
+              style="background-color: #faf7f0"
+            >
+              <h4>A comunicação sem som</h4>
+              <p>A presença da girafa não precisa de linguagem.</p>
+              <p>
+                Segundo registros de monges que presenciaram a aparição, o que
+                foi sentido naquele instante está além do verbal: era como se o
+                tempo parasse por respeito àquilo que estava ali.
+              </p>
+              <p>
+                Desde então, estudiosos têm relatado fenômenos semelhantes
+                durante momentos de grande silêncio interior: sussurros
+                existenciais, intuições súbitas, sonhos com olhos dourados em
+                meio ao nevoeiro.
+              </p>
+            </div>
+          </div>
+        </div>
 
-  &copy; 2025 Girafa Vaticana.
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFive"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFive"
+              style="
+                background-color: #e8d6b6;
+                font-size: large;
+                font-weight: 500;
+              "
+            >
+              5. A Profecia do Segundo Pescoço
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseFive"
+            class="accordion-collapse collapse"
+          >
+            <div
+              class="accordion-body d-flex flex-column"
+              style="background-color: #faf7f0"
+            >
+              <h4>O ciclo da consciência</h4>
+              <p>No final do Codex há uma frase vaga, porém poderosa:</p>
+              <p style="color: #6c757d; font-weight: 500">
+                |
+                <cite
+                  >“Quando o tempo dobrar sobre si mesmo, ela voltará.”</cite
+                >
+              </p>
+              <p>
+                Interpretada como uma <strong>profecia cósmica</strong>, o
+                “segundo pescoço” é visto como o tempo futuro em que a
+                humanidade voltará a buscar sabedoria mais alta —
+                espiritualidade conectada com razão, ciência ligada ao sagrado.
+              </p>
+              <p>Alguns sinais dessa nova era:</p>
+              <ul>
+                <li>A busca global por sentido no mundo digital</li>
+                <li>A viralização de símbolos e arquétipos antigos</li>
+                <li>A fusão entre espiritualidade e tecnologia</li>
+                <li>O aumento dos “sonhadores lúcidos”</li>
+              </ul>
+              <p>
+                Para os Observadores, essa nova era já começou. E a Girafa está
+                observando novamente.
+              </p>
+            </div>
+          </div>
+        </div>
 
-</footer>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseSix"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseSix"
+              style="
+                background-color: #e8d6b6;
+                font-size: large;
+                font-weight: 500;
+              "
+            >
+              6. O Primeiro Pescoço Dobra
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseSix"
+            class="accordion-collapse collapse"
+          >
+            <div
+              class="accordion-body d-flex flex-column"
+              style="background-color: #faf7f0"
+            >
+              <h4>O prenúncio do retorno</h4>
+              <p>
+                No 37º ano após a aparição, houve um alinhamento planetário
+                raro. Astrólogos, matemáticos e monges relataram mudanças sutis:
+              </p>
+              <ul>
+                <li>Anomalias nos relógios atômicos</li>
+                <li>Avistamentos luminosos em desertos e montanhas</li>
+                <li>
+                  Pinturas espontâneas com símbolos espiralados feitos por
+                  crianças no mundo inteiro
+                </li>
+              </ul>
+              <p>
+                Tudo indicava o “primeiro pescoço” dobrando: um movimento
+                temporal onde o passado e o futuro se tocam.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseSeven"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseSeven"
+              style="
+                background-color: #e8d6b6;
+                font-size: large;
+                font-weight: 500;
+              "
+            >
+              7. Ano 2025 – Fundação do Site Girafa Vaticana
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseSeven"
+            class="accordion-collapse collapse"
+          >
+            <div
+              class="accordion-body d-flex flex-column"
+              style="background-color: #faf7f0"
+            >
+              <h4>O tempo digital da revelação</h4>
+              <p>
+                Em meio à era digital, onde tudo é fragmentado, surge o site
+                <strong>Girafa Vaticana</strong> — criado por um observador que
+                sentiu o chamado. Mais que um site, é um
+                <strong>templo virtual</strong>, onde fragmentos do Codex,
+                postagens filosóficas, imagens e histórias revelam as camadas do
+                mistério.
+              </p>
+              <p>
+                Cada clique, cada leitura, cada imagem — tudo é um convite à
+                elevação do olhar. O site também atua como farol, chamando os
+                outros Observadores que ainda não sabem que são.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseEight"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseEight"
+              style="
+                background-color: #e8d6b6;
+                font-size: large;
+                font-weight: 500;
+              "
+            >
+              8. O Futuro Silencioso
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseEight"
+            class="accordion-collapse collapse"
+          >
+            <div
+              class="accordion-body d-flex flex-column"
+              style="background-color: #faf7f0"
+            >
+              <h4>E agora, o que vem?</h4>
+              <p>Há rumores de uma nova manifestação.</p>
+              <p>
+                Dizem que a Girafa Vaticana aparecerá de novo, não em forma
+                física, mas em sonhos, códigos, arte e naqueles que “enxergam
+                além”.
+              </p>
+              <p>Talvez ela nunca tenha ido embora.</p>
+              <p>Talvez tenha se tornado parte de você.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="d-flex flex-column align-items-center justify-content-center mb-2"
+    >
+      &copy; 2025 Girafa Vaticana.
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+  </body>
 </html>
